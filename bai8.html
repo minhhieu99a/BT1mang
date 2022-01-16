@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bai8</title>
+</head>
+<body>
+<script>
+    let bai8=[1,89,156,21,54,74,61,35,87,48];
+    for (let i = 0; i < bai8.length; i++) {
+        for (let j = 0; j < bai8.length; j++) {
+            let a;
+            if (bai8[j]<bai8[j+1]){
+                a=bai8[j];
+                bai8[j]=bai8[j+1];
+                bai8[j+1]=a;
+            }
+        }
+    }document.write(bai8)
+</script>
+</body>
+</html>

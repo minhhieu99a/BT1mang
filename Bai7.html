@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bai7</title>
+</head>
+<body>
+<script>
+    let bai7 = [1 , 15, 31, 48, 68, 13, 25, 47, 75, 69];
+    let V = Number(prompt("Nhập một số nguyên vào đây:"));
+    for (let i = 0; i < bai7.length; i++) {
+        if (V === bai7[i]) {
+            let a=bai7[0];
+            bai7[0]=bai7[i];
+            bai7[i]=a;
+            break;
+        }
+    }bai7.shift();
+    document.write(bai7)
+</script>
+</body>
+</html>
